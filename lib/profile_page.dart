@@ -12,7 +12,9 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("My Profile",
           style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
-        leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios,size: 19,)),
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        }, icon: Icon(Icons.arrow_back_ios,size: 19,)),
         centerTitle: true,
         // backgroundColor: Colors.transparent,
         elevation: 0,

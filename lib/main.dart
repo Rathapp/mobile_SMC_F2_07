@@ -1,8 +1,9 @@
+
 import 'package:evening_class/profile_page.dart';
 import 'package:evening_class/simple_page.dart';
 import 'package:flutter/material.dart';
 
-import 'Midterm/mid_term.dart';
+
 import 'log_in.dart';
 
 void main(){
@@ -16,7 +17,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LogIn()
-      // mid_term()
       // SimplePage()
     );
   }

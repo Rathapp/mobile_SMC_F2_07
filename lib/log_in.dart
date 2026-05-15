@@ -1,4 +1,5 @@
 import 'package:evening_class/profile_page.dart';
+import 'package:evening_class/simple_page.dart';
 import 'package:flutter/material.dart';
 class LogIn extends StatefulWidget {
   LogIn({super.key});
@@ -66,7 +67,7 @@ class _LogInState extends State<LogIn> {
 
                 ),
                 SizedBox(height: 20,),
- CircularProgressIndicator(),
+                CircularProgressIndicator(),
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   height: 50,
@@ -78,7 +79,7 @@ class _LogInState extends State<LogIn> {
                       onPressed: (){
                         print(_emailController.text);
                         print(_passwordController.text);
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfilePage()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>SimplePage()));
                       }, child: Text("Loing",style: TextStyle(color: Colors.white) ,)),
                 )
               ],

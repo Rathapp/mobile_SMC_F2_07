@@ -16,9 +16,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          surfaceTintColor: Colors.white,
+          elevation: 0,
+          scrolledUnderElevation: 0,
+        ),
+        useMaterial3: true,),
       home: LogIn()
       // SimplePage()
-
       // SimplePage()
     );
   }

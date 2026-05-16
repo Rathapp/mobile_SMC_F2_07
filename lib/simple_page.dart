@@ -43,11 +43,10 @@ late int _currentIndex = 0;
         });
       },
       currentIndex: _currentIndex,
-      backgroundColor: Colors.blue,
-
-      selectedItemColor: Colors.red,
+      backgroundColor: Colors.white,
+      selectedItemColor: Colors.blueAccent,
       iconSize: 28,
-      unselectedItemColor: Colors.white,
+      unselectedItemColor: Colors.black54,
       type: BottomNavigationBarType.fixed,
         items: [
       BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
@@ -124,7 +123,7 @@ late int _currentIndex = 0;
       leading: IconButton(onPressed: (){
         _keyScaffold.currentState?.openDrawer();
       }, icon: Icon(Icons.grid_view_outlined)),
-      title: Text("Profile",style: TextStyle(color: Colors.indigo,fontSize: 28,fontWeight: FontWeight(600)),),
+      // title: Text("Profile",style: TextStyle(color: Colors.indigo,fontSize: 28,fontWeight: FontWeight(600)),),
     actions: [
       IconButton(onPressed: (){}, icon: Icon(Icons.notifications_outlined,size: 30,)),
       // IconButton(onPressed: (){
@@ -133,7 +132,10 @@ late int _currentIndex = 0;
 
     ],
     centerTitle: true,
-    backgroundColor: Colors.blue,);
+    backgroundColor: Colors.white,
+    elevation: 2,
+
+    );
   }
 
   Widget buildSafeArea() {
